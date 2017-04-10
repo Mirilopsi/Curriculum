@@ -1,8 +1,8 @@
 #contacta {
     background-color: black;
     color: white;
-    height: 24em;
-    width: 66em;
+    height: 28em;
+    width: 100%;
     border-radius: 20px;
     margin: 27px;
 }
@@ -11,12 +11,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#contacta button {
-    width: 8em;
-    height: 3em;
-    border-radius: 20px;
 }
 
 .formulario {
@@ -43,7 +37,27 @@
     margin-top: 1em;
 }
 
+input,
+select,
+textarea {
+    border-radius: 10px;
+    outline: none;
+}
+
 .datos .genero {
     display: inline-block;
     margin: 3em;
+}
+
+#contacta button {
+    width: 8em;
+    height: 3em;
+    border-radius: 20px;
+    outline: none;
+}
+
+#contacta button:hover {
+    transform: scale(1.02);
+    color: white;
+    background-color: grey;
 }

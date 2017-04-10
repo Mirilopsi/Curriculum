@@ -7,9 +7,8 @@
     height: 6em;
     padding: 20px;
     margin: 4px 34px;
-    display: flex;
-    flex-direction: row;
     z-index: 2;
+    right: 1%;
     position: fixed;
 }
 
