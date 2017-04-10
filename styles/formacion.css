@@ -1,0 +1,11 @@
+#formacion form {
+    background-color: black;
+    height: 24em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 66em;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 27px;
+}

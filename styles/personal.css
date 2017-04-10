@@ -1,11 +1,15 @@
-#informacion-personal {
-    background-image: url(../assets/img/abstract1.jpg);
-    height: 40%;
+#informacion-personal,
+#formación,
+#experiencia-profesional {
+    background-color: black;
+    height: 24em;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 66em;
     justify-content: space-around;
+    border-radius: 20px;
+    margin: 27px;
 }
 
 #información-personal:after {
@@ -19,8 +23,11 @@
     background-color: rgba(0, 0, 1, 0.9);
 }
 
-#informacion-personal article {
+#informacion-personal article,
+#formación article,
+#experiencia-profesional article {
     flex-grow: 2;
     padding: 5%;
-    visibility: hidden;
+    color: white;
+    /*visibility: hidden;*/
 }

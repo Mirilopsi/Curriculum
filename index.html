@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mi currículum</title>
+    <title>Miriam López Sierra</title>
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/personal.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Slabo+27px" rel="stylesheet">
 </head>
 
 <body>
@@ -15,19 +17,26 @@
             <p>Información personal</p>
         </a>
         <div class="botones-cabecera">
-            <a href="#formacion" class="bForm">
-                <img src="assets/img/Circulo1.png" alt=""></a>
-            <a href="#experiencia-profesional" class="bExp">
-                <img class="boton1" src="assets/img/Circulo1.png" alt=""></a>
-            <a href="#contacta" class="bCont">
-                <img class="boton2" src="assets/img/Circulo1.png" alt=""></a>
+            <a href="#formación">
+                <img src="assets/img/Circulo1.png" alt="formacion">
+                <h3>Formación</h3>
+            </a>
+            <a href="#experiencia-profesional">
+                <img src="assets/img/Circulo2.png" alt="experiencia laboral">
+                <h3>Experiencia laboral</h3>
+            </a>
+            <a href="#contacta">
+                <img src="assets/img/Circulo3.png" alt="contactar">
+                <h3>Contactar</h3>
+            </a>
         </div>
-        <!--  <div class="titulo">
-            <h1>Miriam López Sierra</h1>
-            <h3>Estudiante de Informática</h3>
-        </div> -->
     </nav>
-    <main>
+    <main class="main">
+        <header id="inicio">
+            <h1>Miriam López Sierra</h1>
+            <h3>Actualmente estudiante de informática y becaria en Babel aprendiendo en BABELCAMP.JS. </h3>
+            <h4>Entusiasta de la informática y con unas ganas tremendas de mejorar, aprender y demostrar de lo que soy capaz de hacer.</h4>
+        </header>
         <section id="informacion-personal">
             <article class="datos-personales">
                 <h2>Datos personales:</h2>
@@ -56,13 +65,72 @@
             </article>
         </section>
         <section id="formación">
+            <article class="estudios">
+                <h2>Estudios:</h2>
+                <p>Bachillerato</p>
+                <p>Grado de Ingeniería Informática en la UCM</p>
+                <p>Inglés B1</p>
+            </article>
+            <article class="Conocimientos">
+                <h2>Conocimientos técnicos adquiridos:</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Linux</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </article>
+        </section>
+        <section id="experiencia-profesional">
+            <article>
+                <h2>**Próximamente**</h2>
+            </article>
+        </section>
+        <section id="contacta">
+            <form>
+                <div class='formulario'>
+                    <div class="datos">
+                        <h2>Sobre mí</h2>
+                        <label for="Nombre: ">Nombre</label>
+                        <input type="text" name="Nombre" placeholder="Tu nombre" required>
+                        <label for="Email: ">E-mail: </label>
+                        <input type="email" name="Email" placeholder="tu email" required>
+                        <div class="genero">
+                            <label for="mujer">Mujer: </label>
+                            <input type="radio" name="genero" value="mujer" id="mujer">
+                            <label for="hombre">Hombre: </label>
+                            <input type="radio" name="genero" value="hombre" id="hombre">
+                        </div>
+                    </div>
+                    <div class="informacion">
+                        <h2>Sobre mis conocimientos: </h2>
+                        <p>Si tienes alguna duda acerca de mis conocimientos adquiridos hasta ahora pregúntame sin compromiso.</p>
+                        <label for="lenguajes">Motivo del mensaje:</label>
+                        <select name="lenguajes" placeholder="Motivo del mensaje">
+                            <option value="Otros" checked>Otros</option>
+                            <option value="Sobre mi experiencia laboral">Sobre mi experiencia laboral</option>
+                            <option value="Sobre mi residencia">Sobre mi residencia</option>
+                            <option value="Sobre mis estudios">Sobre mis estudios</option>
+                            <option value="Sobre mis idiomas">Sobre mis idiomas</option>
+                            <option value="Sobre disponibilidad">Sobre disponibilidad</option>
+                            <option value="Sobre esta página">Sobre esta página</option>
+                            <option value="Sobre mis aspiraciones">Sobre mis aspiraciones</option>
+                        </select>
+                        <label for="dudaConocimientos">Asunto: </label>
+                        <textarea name="dudaConocimientos" placeholder="Inserta tu duda" rows="8" cols="15"></textarea>
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer id="footer" class="footer">
         <a href="#informacion-personal">Información profesional</a>
-        <!-- <a href="#formación"></a>
+        <a href="#formación"></a>
         <a href="#experiencia-profesional"></a>
-        <a href="#contacta"></a> -->
+        <a href="#contacta"></a>
     </footer>
 </body>
 

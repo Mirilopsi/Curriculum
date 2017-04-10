@@ -1,0 +1,49 @@
+#contacta {
+    background-color: black;
+    color: white;
+    height: 24em;
+    width: 66em;
+    border-radius: 20px;
+    margin: 27px;
+}
+
+#contacta form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacta button {
+    width: 8em;
+    height: 3em;
+    border-radius: 20px;
+}
+
+.formulario {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0px 27px;
+}
+
+.formulario .datos,
+.formulario .informacion {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 1em 27px;
+    text-align: center;
+}
+
+.datos label {
+    margin-top: 1em;
+}
+
+.datos .genero {
+    display: inline-block;
+    margin: 3em;
+}
