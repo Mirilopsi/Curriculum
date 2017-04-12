@@ -1,12 +1,24 @@
 body {
     margin: 0;
     background-color: #white;
+    margin-top: -18px;
 }
 
 h1,
 h2,
 h3 {
+    letter-spacing: 1px;
+    justify-content: center;
     font-family: 'Lobster', cursive;
+    font-size: 26px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    color: black;
+    margin: 2%;
+    text-align: center;
+    font-size-adjust: true;
 }
 
 h4,
@@ -14,13 +26,37 @@ button,
 label,
 p,
 li {
+    letter-spacing: 1px;
     font-family: 'Slabo 27px', serif;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+header {
+    margin-top: 20px;
+}
+
 main {
-    margin: 0em 16% 0em 13%;
+    margin: 0% 16% 0% 19%;
+}
+
+.info {
+    background-color: black;
+    height: 24em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.info article {
+    padding: 5%;
+    color: white;
+}
+
+main section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }

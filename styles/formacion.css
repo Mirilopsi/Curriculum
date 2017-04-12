@@ -1,11 +1,22 @@
-#formacion form {
-    background-color: black;
-    height: 24em;
+.Conocimientos {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 66em;
+    flex-wrap: wrap;
     justify-content: space-around;
+    height: 80%;
+    width: 15em;
+}
+
+.Conocimientos h4 {
+    text-align: center;
+    width: 4em;
+    height: 2em;
+    background-color: white;
+    color: black;
     border-radius: 20px;
-    margin: 27px;
+}
+
+.Conocimientos h4:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 1px 9px 1px grey;
 }
