@@ -8,7 +8,19 @@
         inputs.each(function(index, elem) {
             console.log(elem.name, elem.checkValidity());
             validity.push();
+
+            if (!elem.checkValidity()) {
+
+                $(elem).css("background-color", "#8a1111");
+                $(elem).css("box-shadow", "0px -3px 65px 0px #ff2a2a");
+                $(elem).css("color", "beige");
+
+            }
+
         });
+
+
+
 
         return validity.reduce(function(total, value) {
             return total && value;
@@ -24,8 +36,10 @@
 
         if (+puntuacion < 5 && puntuacion !== "" && select === null) {
             $('.evalua').hide();
-            $("#contacta .datos").append('<label for="evaluacion">Sé que lo has puesto por error...</label>');
-            $("#contacta .datos").append('<select name ="evaluacion" id="selectEval">');
+            $('#boton-encuesta').hide();
+
+            $(".form-evalua").append('<label for="evaluacion">Sé que lo has puesto por error...</label>');
+            $(".form-evalua").append('<select name ="evaluacion" id="selectEval">');
 
             (function() {
                 for (var i = 0; i < nElem; i++) {
@@ -36,17 +50,28 @@
                 }
             })();
 
+            $(".form-evalua").append('<button id="boton-revota" type="submit">Revota!</button>');
+
+            document.querySelector('#boton-revota').addEventListener('click', function(event) {
+                event.preventDefault(); //Evitar que tenga el comportamiento por defecto
+                alert("Gracias por tu más sincera opínión.");
+            });
+
         } else if (+puntuacion > 5) {
             console.log("Senquiu");
         }
     }
 
-    var button = document.querySelector('#contacta button').addEventListener('click', function(event) {
+    var button1 = document.querySelector('#boton-form').addEventListener('click', function(event) {
         event.preventDefault(); //Evitar que tenga el comportamiento por defecto
 
         var result = validarForm();
-        if (result)
-            validarGuay();
     });
+    var button2 = document.querySelector('#boton-encuesta').addEventListener('click', function(event) {
+        event.preventDefault(); //Evitar que tenga el comportamiento por defecto
+
+        validarGuay();
+    });
+
 
 })();

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles/personal.css">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <link rel="stylesheet" type="text/css" href="styles/formacion.css">
+    <link rel="stylesheet" href="styles/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald" rel="stylesheet">
 </head>
@@ -42,8 +43,6 @@
     <main class="main">
         <header id="inicio">
             <h1>Miriam López Sierra</h1>
-            <h3>Actualmente estudiante de informática y becaria en Babel aprendiendo en BABELCAMP.JS. </h3>
-            <h4>Entusiasta de la informática y con unas ganas tremendas de mejorar, aprender y demostrar de lo que soy capaz de hacer.</h4>
         </header>
         <section id="informacion-personal">
             <header class="titulo">
@@ -90,14 +89,14 @@
                 </article>
                 <article class="Conocimientos">
                     <h3>Conocimientos técnicos adquiridos:</h3>
-                    <h4>C</h4>
-                    <h4>C++</h4>
-                    <h4>Java</h4>
-                    <h4>Linux</h4>
-                    <h4>HTML5</h4>
-                    <h4>CSS3</h4>
-                    <h4>Javascript</h4>
-                    <h4>SQL</h4>
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>Java</p>
+                    <p>Linux</p>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>Javascript</p>
+                    <p>SQL</p>
                 </article>
             </div>
         </section>
@@ -107,35 +106,30 @@
             </header>
             <div class="info">
                 <article>
-                    <h3>**Próximamente**</h3>
+                    <p>Actualmente estudiante de informática y becaria en Babel aprendiendo en BABELCAMP.JS. Entusiasta de la informática y con unas ganas tremendas de mejorar, aprender y demostrar de lo que soy capaz de hacer.</p>
                 </article>
             </div>
         </section>
-        <section id="contacta">
+        <section id="contacta" class="container">
             <header class="titulo">
                 <h2>Contacta conmigo</h2>
             </header>
-            <div>
-                <form novalidate>
-                    <div class='formulario'>
-                        <div class="datos">
-                            <h3>Tus datos</h3>
+            <div class="row" id="formulario">
+                <div class="col-8">
+                    <form class="row" novalidate>
+                        <div class="col-3">
                             <label for="Nombre: ">Nombre</label>
                             <input type="text" name="Nombre" placeholder="Tu nombre" required>
                             <label for="Email: ">E-mail: </label>
                             <input type="email" name="Email" placeholder="tu email" required>
-                            <div class="genero">
+                            <div class="row" id="gen">
                                 <label for="mujer">Mujer: </label>
                                 <input type="radio" name="genero" value="mujer" id="mujer" required>
                                 <label for="hombre">Hombre: </label>
                                 <input type="radio" name="genero" value="hombre" id="hombre" required>
                             </div>
-                            <label class="evalua" for="evalua">Evalúa la página del 1 al 10</label>
-                            <input class="evalua" type="number" name="evalua" min="0" max="10" placeholder="No sabe no contesta">
                         </div>
-                        <div class="informacion">
-                            <h3>Sobre mis conocimientos: </h3>
-                            <p>Si tienes alguna duda acerca de mis conocimientos adquiridos hasta ahora pregúntame sin compromiso.</p>
+                        <div class="col-4">
                             <label for="motivo">Motivo del mensaje:</label>
                             <select name="motivo" placeholder="Motivo del mensaje" required>
                                 <option value="Sobre mi experiencia laboral">Sobre mi experiencia laboral</option>
@@ -150,14 +144,29 @@
                             <label for="dudaConocimientos">Asunto: </label>
                             <textarea name="dudaConocimientos" placeholder="Inserta tu texto" rows="8" cols="15" required></textarea>
                         </div>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
+                    </form>
+                    <button id="boton-form" type="submit">Enviar</button>
+                </div>
+                <div class="col-3" id="otrosContactos">
+                    <p>También puedes contactar conmigo a través de:</p>
+                    <ul>
+                        <li><img src="assets/img/iconLI.png" alt="Enlace LinkedIn"></li>
+                        <li><img src="assets/img/iconLI.png" alt="Enlace LinkedIn"></li>
+                        <li><img src="assets/img/iconLI.png" alt="Enlace LinkedIn"></li>
+                    </ul>
+                    <form class="form-evalua">
+                        <hr>
+                        <label class="evalua" for="evalua">Evalúa la página del 1 al 10</label>
+                        <input class="evalua" type="number" name="evalua" min="0" max="10" placeholder="No sabe no contesta">
+                        <button id="boton-encuesta" type="submit">Votar!</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="scripts/contact.js"></script>
+    <script src=" http://code.jquery.com/jquery-3.2.1.js "></script>
+    <script src="scripts/contact.js "></script>
+    <script src="scripts/nav.js "></script>
 </body>
 
 </html>

@@ -1,3 +1,10 @@
+#formacion .info {
+    background-image: url('..assets/img/edificio.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
 .Conocimientos {
     display: flex;
     flex-wrap: wrap;
@@ -6,16 +13,18 @@
     width: 15em;
 }
 
-.Conocimientos h4 {
+.Conocimientos p {
     text-align: center;
-    width: 4em;
     height: 2em;
     background-color: white;
     color: black;
     border-radius: 20px;
+    width: 5em;
+    margin: 12px;
+    padding-top: 8px;
 }
 
-.Conocimientos h4:hover {
+.Conocimientos p:hover {
     transition: transform 0.5s;
     transform: scale(1.1);
     box-shadow: 0px 1px 9px 1px grey;

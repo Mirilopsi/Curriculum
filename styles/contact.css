@@ -1,49 +1,64 @@
 #contacta {
     color: white;
-    height: 28em;
     width: 100%;
-    margin: 27px;
 }
 
-#contacta form {
-    border-radius: 20px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
-}
-
-.formulario {
+#formulario {
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-around;
-    margin: 0px 27px;
+    padding: 2%;
+    background-image: url('../assets/img/fondo.jpg');
+    object-fit: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -3px 65px 0px black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
 }
 
-.formulario .datos,
-.formulario .informacion {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    margin: 1em 27px;
+label {
+    margin: 27px 0px 6px 0px;
+    width: 100%;
+    display: block;
+}
+
+#gen {
+    margin-left: 6%;
+}
+
+#mujer,
+#hombre {
+    width: 22px;
+    display: inline-block;
+}
+
+#formulario {
+    padding-left: 10%;
+}
+
+select {
+    height: 2em;
+    border-radius: 10px;
+}
+
+input {
+    height: 16px;
     text-align: center;
-}
-
-.datos label {
-    margin-top: 1em;
 }
 
 input,
-select,
 textarea {
     border-radius: 10px;
     outline: none;
-    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: initial;
+    border-style: solid;
+    border-width: 2px;
+    color: beige;
+    border-color: beige;
 }
 
 .datos .genero {
@@ -57,6 +72,23 @@ textarea {
     height: 3em;
     border-radius: 20px;
     outline: none;
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+img {
+    width: 13%;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    /* width: 54px; */
+}
+
+ul {
+    padding-left: 3em;
+    width: 18em;
 }
 
 #contacta button:hover {
@@ -65,4 +97,19 @@ textarea {
     color: white;
     box-shadow: 0px 1px 9px 1px grey;
     background-color: grey;
+}
+
+.reVotar {
+    visibility: hidden;
+}
+
+#otrosContactos {
+    border-style: solid;
+    border-color: beige;
+    border-radius: 20px;
+    margin-top: 2em;
+}
+
+#otrosContactos p {
+    margin-top: 3em;
 }
